@@ -13,7 +13,7 @@ resource "aws_instance" "app_server" {
 
 resource "aws_ec2_instance_state" "app_server" {
   instance_id = "i-076700167cd56b69e"
-  state       = "start"
+  state       = "running"
 }
 
 resource "aws_instance" "app_server_2" {
