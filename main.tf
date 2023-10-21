@@ -10,3 +10,12 @@ resource "aws_instance" "app_server" {
     Name = "ExampleAppServerInstance_Ec2"
   }
 }
+
+resource "aws_instance" "app_server_2" {
+  ami           = "ami-04fb7beeed4da358b"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "sp-rest-app"
+  }
+}
